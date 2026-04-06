@@ -4,47 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Focus on Today</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-   
     <main>
-         <h1 class="tittle">Focus on <span>Today</span></h1>
-         <div class="app-container">
-            <h2 class="subtitle"><span>Today</span><img class="sun-icon" src="./images/Sun.svg" alt="sun"> </h2> 
+        <h1 class="title">Focus on <span>Today</span></h1>
+
+        <div class="app-container">
+            <h2 class="subtitle">
+                <span>Today</span>
+                <img class="sun-icon" src="./images/Sun.svg" alt="Sun icon">
+            </h2>
+
             <p class="progress-label">Raise the bar by completing your goals!</p>
-            <div class="progress-bar ">
-                <div class="progress-value"> 
-                    <span>2/3 Completed</span>
+
+            <div class="progress-bar">
+                <div class="progress-value">
+                    <span>0/3 Completed</span>
                 </div>
-                <p class="error-label">PLease set all the 3 goals!</p>
             </div>
-            <div class="goal-container ">
-                <div class="custom-checkbox">
-                    <img class="check-icon" src="./images/Vector 1.svg" alt="check-icon">
-                </div>
-                
-                <input class="goal-input" type="text" placeholder="Add new goal...">
-            </div>
+
+            <p class="error-label">Please set all the 3 goals before marking them complete.</p>
+
             <div class="goal-container">
-                <div class="custom-checkbox">
-                     <img class="check-icon" src="./images/Vector 1.svg" alt="check-icon">
+                <div class="custom-checkbox" role="button" tabindex="0" aria-label="Mark first goal as complete">
+                    <img class="check-icon" src="./images/Vector 1.svg" alt="Check icon">
                 </div>
-                <input class="goal-input" type="text" placeholder="Add new goal...">
+                <label class="sr-only" for="first">First goal</label>
+                <input id="first" class="goal-input" type="text" placeholder="Add new goal...">
             </div>
+
             <div class="goal-container">
-                <div class="custom-checkbox">
-                     <img class="check-icon" src="./images/Vector 1.svg" alt="check-icon">
+                <div class="custom-checkbox" role="button" tabindex="0" aria-label="Mark second goal as complete">
+                    <img class="check-icon" src="./images/Vector 1.svg" alt="Check icon">
                 </div>
-                <input class="goal-input" type="text" placeholder="Add new goal...">
+                <label class="sr-only" for="second">Second goal</label>
+                <input id="second" class="goal-input" type="text" placeholder="Add new goal...">
             </div>
+
+            <div class="goal-container">
+                <div class="custom-checkbox" role="button" tabindex="0" aria-label="Mark third goal as complete">
+                    <img class="check-icon" src="./images/Vector 1.svg" alt="Check icon">
+                </div>
+                <label class="sr-only" for="third">Third goal</label>
+                <input id="third" class="goal-input" type="text" placeholder="Add new goal...">
+            </div>
+
             <p class="quote">"Move one step ahead, today!"</p>
-            <p class="made-with">Made with  ❤️ by Mahendra Gupta </p>
-         </div>
+            <p class="made-with">Made with ❤️ by Mahendra Gupta</p>
+        </div>
     </main>
 </body>
 </html>
